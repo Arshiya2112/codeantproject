@@ -1,0 +1,152 @@
+.feature-section {
+  width: 50%;
+  height: 100vh;
+  background-color: #ffffff;
+  border: 1px solid #E9EAEB;
+}
+
+.top {
+  background-color: white;
+  margin: 150px 80px 0px 80px;
+  border-radius: 24px;
+  width: 447px;
+  height: 170px;
+  align-items: flex-start;
+  box-shadow: 0 4px 12px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logoimg {
+  width: 28px;
+  height: 31px;
+  margin-right: 10px;
+}
+
+.logohead {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #081735;
+}
+
+.breaklogo {
+  border: 1px solid #E6E8F0;
+}
+
+.featurelist {
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content:space-evenly;
+  /* align-items: center; */
+}
+
+ul li {
+  text-align:center;
+}
+
+ul li span {
+  display: block;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: bold;
+  color: #081735;
+}
+
+ul li  p {
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 0;
+  color: #171717;
+}
+
+.bottom {
+  background-color: #FFFFFF;
+  width: 265px;
+  height: 164;
+  margin: 0px 280px;
+  border-radius: 24px;
+  box-shadow: 0 4px 12px 6px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  bottom: 170px;
+  left: 5%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 20px;
+  z-index: 2;
+}
+
+.weekly-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.weekly-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 10px;
+}
+
+.graphimg {
+  width: 56px;
+  height: 56.77px;
+}
+
+.weekly-left p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #171717;
+  line-height: 20px;
+}
+
+.weekly-left h2 {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 32px;
+  color: #081735;
+  margin-bottom: 0;
+  margin-top: -1px;
+}
+
+.weekly-right {
+  text-align: left;
+  padding-right: 10px;
+  margin-top: -10px;
+}
+
+.increase {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  margin-bottom: 12px;
+  color: #0049E6
+}
+
+.week {
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: -5px;
+  color: #171717;
+}
+
+.bottomimage {
+  width: 200px;
+  height: 230px;
+  position: static; /* Default position */
+  margin-top: calc(100vh - 560px);
+  margin-left: 0;
+}

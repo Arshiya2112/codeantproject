@@ -1,0 +1,163 @@
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #E9EAEB;
+  /* box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); */
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-100%); /* Initially hidden on all screens */
+
+  /* Show on larger screens */
+  @media (min-width: 769px) { 
+    transform: translateX(0); 
+  }
+}
+/* Logo Section */
+.logo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+.logo img {
+  width: 170px;
+  height: auto;
+}
+
+/* Selector Section */
+.selector {
+  position: relative;
+  width: 202px; /* Adjust as needed */
+  margin-bottom: 16px;
+  padding: 8px 12px;
+  gap: 8px;
+}
+
+.selector input {
+  width: 100%;
+  padding: 10px;
+  padding-right: 40px; /* Add space for the arrow image */
+  border: 1px solid #D5D7DA;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 24px;
+  /* overflow-x:visible; */
+  text-align: left;
+  background-color: #fff; /* Ensure consistent background */
+  box-sizing: border-box;
+  cursor: pointer; /* Include padding in width */
+}
+
+.selector img {
+  position: absolute;
+  right: 24px; 
+  top: 50%;
+  transform: translateY(-50%);
+  width: 13px; /* Adjust width */
+  height: 7.24px; /* Adjust height */
+  cursor: pointer; /* Ensure the image does not block clicks on the input */
+}
+
+/* Repositories Button */
+.repositories-button {
+  width: 202px;
+  padding: 10px 10px;
+  /* margin-top: 2px; */
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  background-color: #1570EF;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between the icon and text */
+  justify-content: start;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: left; /* Optional: Align text to the left */
+}
+
+.repositories-button img {
+  width: 20px; /* Adjust size of the image */
+  height: 20px; /* Maintain aspect ratio */
+}
+
+
+/* Menu Section */
+.menu {
+  display: flex;
+  flex-direction: column;  /* Stack menu items vertically */
+  align-items: flex-start; /* Align the items to the left */
+  gap: 15px; /* Adds space between menu items */
+  width: 100%; /* Ensure the menu spans the full width of the container */
+  padding-left: 0; /* Ensure no extra padding on the left */
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;  /* Align the icon and text horizontally */
+  justify-content: flex-start;  /* Align them to the left */
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  margin-left: 10px;
+  color: #414651;
+  cursor: pointer;
+  width: 100%; /* Ensure the text spans the entire width of the container */
+}
+
+.menu-item img {
+  width: 24px;
+  height: 22px;
+}
+
+.menu-item .icon {
+  font-size: 1.5rem; /* Make the icon size a bit larger */
+  margin-right: 10px; /* Space between the icon and text */
+}
+
+
+.icon {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Bottom Section */
+.bottom-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: auto;
+  width: 100%;
+}
+
+.bottom-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #414651;
+  gap: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.bottom-item img {
+  width: 24px; /* Adjust the size of the icons */
+  height: 22px; /* Maintain aspect ratio */
+  margin-right: 10px; /* Adds space between the image and text */
+}
