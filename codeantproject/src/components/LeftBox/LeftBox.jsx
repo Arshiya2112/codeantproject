@@ -1,12 +1,24 @@
-import FeatureBox from "../FeatureBox/FeatureBox";
-import CodeAntImage from "./CodeAntImage"
+import antonly from "../../assets/codeantonly.png";
+
 import "./LeftBox.css";
+import UpperCard from "../FeatureBox/UpperCard";
+import LowerCard from "../FeatureBox/LowerCard";
+
 const LeftBox = () => {
   return (
     <>
       <div className="left-box">
-        <FeatureBox />
-        <CodeAntImage/>
+        <div className="feature-box">
+          {/* <UpperCard />
+          <LowerCard /> */}
+          <div className="divh">
+            Div
+          </div>
+        </div>
+
+       
+        <img className="codeant-image"  src={antonly} alt="" />
+        
       </div>
     </>
   );

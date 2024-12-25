@@ -1,67 +1,35 @@
-import React from "react";;
-import logo from "../../assets/formlogo.png";
+import React from "react";
+import "./Login.css";
+import LoginHeader from "../LoginHeader/LoginHeader";
+import FormOptions from "../FormOptions/FormOptions";
+import githubimg from "../../assets/github.png";
 import bucketimg from "../../assets/bitbucket.png";
 import devopsimg from "../../assets/devops.png";
-import githubimg from "../../assets/github.png";
 import gitlabimg from "../../assets/gitlab.png";
 import ssoimg from "../../assets/sso.png";
-import "./Login.css";
 
 const Login = () => {
+  const [activeButton, setActiveButton] = React.useState("SAAS");
+
+  const saasOptions = [
+    { imgSrc: githubimg, text: "Sign in with GitHub" },
+    { imgSrc: bucketimg, text: "Sign in with Bitbucket" },
+    { imgSrc: devopsimg, text: "Sign in with Azure DevOps" },
+    { imgSrc: gitlabimg, text: "Sign in with GitLab" },
+  ];
+
+  const selfHostedOptions = [
+    { imgSrc: gitlabimg, text: "Self Hosted GitLab" },
+    { imgSrc: ssoimg, text: "Sign in with SSO" },
+  ];
+
   return (
     <div className="main-login">
       <div className="login-form">
-        <div className="login-header">
-          <img src={logo} alt="CodeAnt AI" className="login-logo" />
-          <h1>Welcome to CodeAnt AI</h1>
-        </div>
-        <div className="select-buttons">
-          <button
-            className={activeButton === "SAAS" ? "active" : ""}
-            onClick={() => setActiveButton("SAAS")}
-          >
-            SAAS
-          </button>
-          <button
-            className={activeButton === "Self Hosted" ? "active" : ""}
-            onClick={() => setActiveButton("Self Hosted")}
-          >
-            Self Hosted
-          </button>
-        </div>
+        <LoginHeader activeButton={activeButton} setActiveButton={setActiveButton} />
         <hr className="lbreak" />
-        {activeButton === "SAAS" && (
-          <div className="form-options">
-            <button>
-              <img src={githubimg} />
-              Sign in with GitHub
-            </button>
-            <button>
-              <img src={bucketimg} alt="" />
-              Sign in with Bitbucket
-            </button>
-            <button>
-              <img src={devopsimg} alt="" />
-              Sign in with Azure Devops
-            </button>
-            <button>
-              <img src={gitlabimg} alt="" />
-              Sign in with GitLab
-            </button>
-          </div>
-        )}
-        {activeButton === "Self Hosted" && (
-          <div className="form-options">
-            <button>
-              <img src={gitlabimg} alt="" />
-              Self Hosted GitLab
-            </button>
-            <button>
-              <img src={ssoimg} alt="" />
-              Sign in with SSO
-            </button>
-          </div>
-        )}
+        {activeButton === "SAAS" && <FormOptions options={saasOptions} />}
+        {activeButton === "Self Hosted" && <FormOptions options={selfHostedOptions} />}
       </div>
     </div>
   );

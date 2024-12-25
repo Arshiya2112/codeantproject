@@ -6,12 +6,8 @@ const MainBox = () => {
   return (
     <>
       <div className="main-box">
-        <div className="mainbox-left">
-        <LeftBox />
-        </div>
-        <div className="mainbox-right">
-        <RightBox />
-        </div>
+        <LeftBox/>
+        <RightBox/>
       </div>
     </>
   );

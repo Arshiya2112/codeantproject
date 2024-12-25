@@ -1,0 +1,27 @@
+.option-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 0 80px;
+    padding: 12px 8px;
+    border: 1px solid #d8dae5;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .option-image {
+    width: 24px;
+    height: 24px;
+  }
+
+  @media  screen and (max-width: 1024px) {
+    .option-button {
+      width: 80%;
+      margin: auto;
+    }
+  }
+  
