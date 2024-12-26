@@ -1,0 +1,102 @@
+.signin-container {
+  width: 80%;
+  /* height: 80%; */
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid #e9eaeb;
+  border-radius: 12px;
+}
+
+.logo {
+  width: 200px;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #181d27;
+}
+
+.toggle-container {
+  display: flex;
+  margin-bottom: 36px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e9eaeb;
+}
+
+.toggle-button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  color: #414651;
+  transition: background-color 0.3s;
+}
+
+.toggle-button.active {
+  background-color: #1570ef;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+
+.toggle-button:not(.active) {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.form-divider {
+  margin-right: -20px;
+  margin-left: -20px;
+  border: 1px solid #d5d7da;
+}
+
+.signin-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.signin-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #d8dae5;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  color: #171717;
+  transition: background-color 0.2s;
+}
+
+.signin-button:hover {
+  background-color: #f5f5f5;
+}
+
+.signin-button img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.privacy-notice {
+  font-size: 16px;
+  color: #181d27;
+  margin-bottom: 3%;
+  text-align: center;
+}

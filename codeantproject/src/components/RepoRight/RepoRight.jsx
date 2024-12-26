@@ -11,7 +11,7 @@ const RepoRight = () => {
       <div className="repo-list">
         <div className="repo-header">
           <div className="repo-heading">
-            <span className="title">Repositories</span>
+            <span className="repo-title">Repositories</span>
             <span className="title-number">33 total repositories</span>
           </div>
           <div className="head-buttons">

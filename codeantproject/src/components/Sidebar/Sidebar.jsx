@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import imagelogo from "../../assets/imagelogo.png";
 import dropimg from "../../assets/dropimg.png";
 import homeimg from "../../assets/homeimg.png";
@@ -16,7 +16,7 @@ const Sidebar = ({ isMobile, menu, setMenu }) => {
   return (
     <div className="sidebar">
       <div className="sidebar-header">
-        <div className="header">
+        <div className="s-header">
           <img src={imagelogo} alt="Form Logo" />
           <span>CodeAnt AI</span>
         </div>

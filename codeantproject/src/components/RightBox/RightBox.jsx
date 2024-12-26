@@ -1,14 +1,12 @@
 import React from "react";
-import Login from "../Login/Login";
-import Footer from "../Footer/Footer";
 import './RightBox.css';
+import SignIn from "../Signin/Signin";
 
 const RightBox = () => {
   return (
     <>
       <div className="rightbox">
-        <Login/>
-        <Footer/>
+        <SignIn/>
       </div>
     </>
   );

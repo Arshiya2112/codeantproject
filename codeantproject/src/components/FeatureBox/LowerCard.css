@@ -1,8 +1,6 @@
 .bottom {
-  /* top: 47%; */
   left: 50%;
   margin-top: -2%;
-  /* z-index: 1; */
   display: flex;
   flex-direction: row;
   position: absolute;
@@ -10,12 +8,9 @@
   box-shadow: 0 4px 12px 6px rgba(0, 0, 0, 0.1);
   background-color: #fff;
   padding: 20px;
-  width: 60%;
-  /* gap: 90px; */
-  text-align: center; /* Centered content horizontally */
+  width: 45%;
+  text-align: center;
 }
-
-
 
 .weekly-left {
   display: flex;
@@ -29,12 +24,12 @@
 .graphimg {
   width: 50px;
   height: auto;
-  margin-right: 20px; /* Added margin for spacing between image and text */
+  margin-right: 20px;
 }
 
 .weekly-left p {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: bold;
   color: #171717;
   margin: 0;
 }
@@ -48,16 +43,11 @@
 }
 
 .weekly-right {
-  display: flex; /* Changed to flex for better alignment */
+  display: flex;
   flex-direction: column;
-  /* align-items: end;  */
-  /* justify-content: flex-end; *//* Centered text vertically */
   margin: 0;
-  margin-left: 25%;
+  margin-left: 20%;
   gap: 6px;
-  /* margin-bottom: 12px; */
-  /* margin-left: 12%; */
-  /* text-align: center; */
 }
 
 .increase {
@@ -65,19 +55,20 @@
   align-items: flex-start;
   justify-content: flex-start;
   text-align: left;
-  /* gap: 4px; */
   font-weight: bold;
   font-size: 16px;
 }
 
 .measure {
   font-weight: bold;
-  color: #0049C6
+  font-size: 14px;
+  text-align: left;
+  color: #0049c6;
 }
 
 .week {
   font-size: 12px;
+  text-align: left;
   color: #171717;
-  /* margin: 0; */
   margin-top: -6px;
 }
